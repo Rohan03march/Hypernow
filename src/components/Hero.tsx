@@ -54,7 +54,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-400 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
-              We are building the <span className="text-white font-medium italic">operational backbone</span> for India’s quick-commerce and e-commerce brands, helping them set up, manage, and scale their operations and logistics.
+              We are an <span className="text-white font-medium italic">operations and infrastructure partner</span> for e-commerce companies, supporting warehousing operations, logistics coordination, and on-ground execution to help businesses scale efficiently.
             </motion.p>
 
             <motion.div
