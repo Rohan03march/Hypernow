@@ -86,10 +86,6 @@ export default function Hero() {
                 <CheckCircle2 className="w-5 h-5 text-accent-400" />
                 <span className="text-sm font-semibold text-slate-300">99.9% Fulfillment Rate</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-accent-400" />
-                <span className="text-sm font-semibold text-slate-300">10+ Major Cities</span>
-              </div>
             </motion.div>
           </motion.div>
 

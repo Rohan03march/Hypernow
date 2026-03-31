@@ -14,10 +14,10 @@ export default function About() {
       {/* Dynamic background element */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-600/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary-400/5 rounded-full blur-[100px] pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          
+
           {/* Text Content */}
           <div className="order-2 lg:order-1">
             <motion.div
@@ -31,11 +31,11 @@ export default function About() {
                 Our Story
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-white mb-8 leading-[1.1]">
-                Mastering the <br/>
+                Mastering the <br />
                 <span className="gradient-text">Logistics Frontier</span>
               </h2>
               <p className="text-lg md:text-xl text-slate-400 mb-12 leading-relaxed font-light">
-                HyperNow Logistics LLP is the definitive partner for <span className="text-white font-medium">dark store operations</span>. We don't just manage stock; we optimize the entire 10-minute fulfillment cycle with precision and scale.
+                HyperNow Logistics is the definitive partner for <span className="text-white font-medium">dark store operations</span>. We don't just manage stock; we optimize the entire 10-minute fulfillment cycle with precision and scale.
               </p>
             </motion.div>
 
@@ -49,7 +49,7 @@ export default function About() {
                 {
                   icon: <MapPin className="w-5 h-5 text-primary-400" />,
                   title: "Pan-India Presence",
-                  desc: "Operating from Bangalore with active scale-up in all major Indian metros.",
+                  desc: "Operating from Bengaluru and Chennai with active scale-up in all major Indian metros.",
                 },
                 {
                   icon: <Target className="w-5 h-5 text-primary-400" />,

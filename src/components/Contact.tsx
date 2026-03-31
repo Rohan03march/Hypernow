@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 const contactItems = [
   { icon: <Phone className="w-8 h-8" />, title: "Call Operations", info: "+91 9036377680", link: "tel:+919036377680" },
   { icon: <Mail className="w-8 h-8" />, title: "Strategic Email", info: "info@hypernow.co.in", link: "mailto:info@hypernow.co.in" },
-  { icon: <MapPin className="w-8 h-8" />, title: "HQ Location", info: "Bangalore, India", link: "#" },
+  { icon: <MapPin className="w-8 h-8" />, title: "HQ Location", info: "Bangalore & Chennai, India", link: "#" },
 ];
 
 export default function Contact() {
@@ -15,9 +15,9 @@ export default function Contact() {
       {/* Background accents */}
       <div className="absolute inset-0 bg-grid-white/[0.02]" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-600/10 blur-[120px] rounded-full pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 relative z-10">
-        
+
         <div className="flex flex-col items-center text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -27,8 +27,8 @@ export default function Contact() {
           >
             Direct Access
           </motion.div>
-          
-          <motion.h2 
+
+          <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -36,15 +36,15 @@ export default function Contact() {
           >
             Connect with our <span className="gradient-text">Leadership</span>
           </motion.h2>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-xl md:text-2xl text-slate-500 font-medium max-w-2xl mx-auto leading-tight mb-24"
           >
-            Bypassing the noise for direct operational scaling. Reach out to our 
+            Bypassing the noise for direct operational scaling. Reach out to our
             strategic teams for high-volume dark store requirements.
           </motion.p>
 
@@ -72,7 +72,7 @@ export default function Contact() {
                   ) : (
                     <span className="text-xl md:text-2xl font-black text-white tracking-tight">{item.info}</span>
                   )}
-                  
+
                   {/* Decorative line */}
                   <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-primary-500/0 group-hover:bg-primary-500 transition-all duration-700" />
                 </div>
@@ -80,19 +80,19 @@ export default function Contact() {
             ))}
           </div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
             className="mt-32 border-t border-white/5 pt-12 w-full flex flex-col items-center"
           >
-             <p className="text-[10px] font-black text-slate-700 uppercase tracking-[1em] mb-4">Hypernow Strategic Infrastructure</p>
-             <div className="flex gap-4 items-center">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary-500/20" />
-                <span className="text-[9px] font-bold text-slate-600 uppercase tracking-widest">Scaling India's Retail Future</span>
-                <div className="w-1.5 h-1.5 rounded-full bg-primary-500/20" />
-             </div>
+            <p className="text-[10px] font-black text-slate-700 uppercase tracking-[1em] mb-4">Hypernow Strategic Infrastructure</p>
+            <div className="flex gap-4 items-center">
+              <div className="w-1.5 h-1.5 rounded-full bg-primary-500/20" />
+              <span className="text-[9px] font-bold text-slate-600 uppercase tracking-widest">Scaling India's Retail Future</span>
+              <div className="w-1.5 h-1.5 rounded-full bg-primary-500/20" />
+            </div>
           </motion.div>
         </div>
       </div>
