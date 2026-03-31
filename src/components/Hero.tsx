@@ -25,14 +25,14 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-background pt-34 lg:pt-48 pb-24">
+    <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-background pt-28 lg:pt-36 pb-20">
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-grid opacity-20 pointer-events-none" />
       <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary-500/10 rounded-full blur-[120px] pointer-events-none animate-pulse" />
       <div className="absolute bottom-[20%] right-[-5%] w-[40%] h-[40%] bg-primary-600/10 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 w-full px-6 sm:px-10 lg:px-16 xl:px-24 mx-auto max-w-7xl">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24">
+      <div className="relative z-10 w-full px-6 sm:px-10 lg:px-16 xl:px-24 mx-auto max-w-[1500px]">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
 
           {/* Left Content */}
           <motion.div
@@ -44,7 +44,7 @@ export default function Hero() {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-heading font-black tracking-tight mb-6 leading-[0.95]"
+              className="text-4xl sm:text-6xl md:text-7xl xl:text-8xl font-heading font-black tracking-tight mb-6 leading-[0.95]"
             >
               Scale At <br />
               <span className="gradient-text">Hyper Speed</span>
@@ -71,7 +71,7 @@ export default function Hero() {
 
               <a
                 href="#services"
-                className="w-full sm:w-auto group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-lg text-white hover:bg-white/5 border border-white/10 transition-all"
+                className="w-full sm:w-auto group inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-lg text-white hover:bg-white/5 border border-white/10 transition-all"
               >
                 Our Services
               </a>
@@ -94,13 +94,13 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9, x: 20 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
-            className="flex-1 relative w-full lg:w-auto mb-6 lg:mb-0"
+            className="flex-1 relative w-full lg:w-auto mb-10 lg:mb-0"
           >
-            <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-[10px] border-white/5 shadow-2xl glass group">
+            <div className="relative z-10 rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden border-[6px] sm:border-[10px] border-white/5 shadow-2xl glass group">
               <img
                 src="/hero-bg.png"
                 alt="Operations Dashboard"
-                className="w-full h-auto aspect-[4/3] object-cover mix-blend-screen opacity-90 group-hover:scale-105 transition-transform duration-1000"
+                className="w-full h-auto aspect-video sm:aspect-[4/3] object-cover mix-blend-screen opacity-90 group-hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
             </div>
@@ -109,26 +109,10 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-6 -right-6 z-20 glass p-5 rounded-2xl border border-white/20 shadow-xl hidden sm:block"
+              className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 z-20 glass p-3 sm:p-5 rounded-xl sm:rounded-2xl border border-white/20 shadow-xl scale-75 sm:scale-100 origin-bottom-right"
             >
-              <div className="text-primary-400 text-xs font-bold uppercase tracking-wider mb-1">Live Efficiency</div>
-              <div className="text-2xl font-bold text-white">94.8% <span className="text-emerald-400 text-sm font-normal">↑ 2.4%</span></div>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute -bottom-10 -left-6 z-20 glass p-6 rounded-2xl border border-white/20 shadow-2xl hidden sm:block"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent-500/20 flex items-center justify-center border border-accent-500/30">
-                  <Play className="w-5 h-5 text-accent-400 fill-current ml-1" />
-                </div>
-                <div>
-                  <div className="text-white font-bold">14,892+</div>
-                  <div className="text-slate-400 text-xs font-medium">Orders / Day</div>
-                </div>
-              </div>
+              <div className="text-primary-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-1">Live Efficiency</div>
+              <div className="text-lg sm:text-2xl font-bold text-white">94.8% <span className="text-emerald-400 text-xs sm:text-sm font-normal">↑ 2.4%</span></div>
             </motion.div>
           </motion.div>
 
