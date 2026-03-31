@@ -15,11 +15,6 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "HyperNow Logistics | Quick Commerce & Dark Store Operations",
   description: "Preferred operations partner for quick-commerce companies across India. Delivering dependable, high-volume, scalable dark store operations.",
-  icons: {
-    icon: "/hypernow.png",
-    shortcut: "/hypernow.png",
-    apple: "/hypernow.png",
-  },
 };
 
 export default function RootLayout({
