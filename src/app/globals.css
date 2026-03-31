@@ -7,13 +7,14 @@
   --color-primary-200: #badffd;
   --color-primary-300: #7dc5fc;
   --color-primary-400: #38a9f9;
-  --color-primary-500: #0ea5e9; /* Vibrant Cyan-Blue */
+  --color-primary-500: #0ea5e9;
+  /* Vibrant Cyan-Blue */
   --color-primary-600: #0284c7;
   --color-primary-700: #0369a1;
   --color-primary-800: #075985;
   --color-primary-900: #0c4a6e;
   --color-primary-950: #082f49;
-  
+
   /* Refined Gold Accent */
   --color-accent-300: #fde047;
   --color-accent-400: #facc15;
@@ -21,9 +22,12 @@
   --color-accent-600: #ca8a04;
 
   /* Premium Dark Theme by Default */
-  --color-background: #020617; /* Deep Slate 950 */
-  --color-foreground: #f8fafc; /* Slate 50 */
-  --color-card: rgba(15, 23, 42, 0.6); /* Slate 900 with transparency */
+  --color-background: #020617;
+  /* Deep Slate 950 */
+  --color-foreground: #f8fafc;
+  /* Slate 50 */
+  --color-card: rgba(15, 23, 42, 0.6);
+  /* Slate 900 with transparency */
   --color-border: rgba(255, 255, 255, 0.1);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -44,7 +48,12 @@
     overflow-x: hidden;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
     letter-spacing: -0.025em;
   }

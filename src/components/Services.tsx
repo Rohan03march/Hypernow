@@ -85,10 +85,6 @@ export default function Services() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group glass p-10 rounded-[2.5rem] transition-all hover:bg-white/5 border border-white/5 hover:border-primary-500/30 relative flex flex-col justify-between"
             >
-              <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                <ArrowUpRight className="w-6 h-6 text-primary-400" />
-              </div>
-
               <div>
                 <div className="w-14 h-14 rounded-2xl glass-light flex items-center justify-center mb-8 border border-white/10 group-hover:scale-110 group-hover:border-primary-500/50 transition-all duration-500 shadow-xl group-hover:shadow-primary-500/20">
                   {/* Re-rendering the icon with primary color */}
