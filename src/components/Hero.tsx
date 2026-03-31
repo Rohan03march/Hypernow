@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary-500/10 rounded-full blur-[120px] pointer-events-none animate-pulse" />
       <div className="absolute bottom-[20%] right-[-5%] w-[40%] h-[40%] bg-primary-600/10 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 w-full px-6 sm:px-10 lg:px-16 xl:px-24 mx-auto max-w-[1500px]">
+      <div className="max-w-[1850px] mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
 
           {/* Left Content */}
@@ -71,7 +71,7 @@ export default function Hero() {
 
               <a
                 href="#services"
-                className="w-full sm:w-auto group inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-lg text-white hover:bg-white/5 border border-white/10 transition-all"
+                className="w-full sm:w-auto group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-lg text-white hover:bg-white/5 border border-white/10 transition-all"
               >
                 Our Services
               </a>
@@ -100,16 +100,6 @@ export default function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
             </div>
-
-            {/* Floating UI Elements */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 z-20 glass p-3 sm:p-5 rounded-xl sm:rounded-2xl border border-white/20 shadow-xl scale-75 sm:scale-100 origin-bottom-right"
-            >
-              <div className="text-primary-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-1">Live Efficiency</div>
-              <div className="text-lg sm:text-2xl font-bold text-white">94.8% <span className="text-emerald-400 text-xs sm:text-sm font-normal">↑ 2.4%</span></div>
-            </motion.div>
           </motion.div>
 
         </div>

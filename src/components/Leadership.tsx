@@ -199,7 +199,7 @@ export default function Leadership() {
     <section id="leadership" className="py-32 md:py-48 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-white/[0.01]" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-16 relative z-10">
+      <div className="max-w-[1850px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Centered Header */}
         <div className="text-center mb-24 lg:mb-40">

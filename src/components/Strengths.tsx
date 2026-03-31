@@ -9,7 +9,7 @@ export default function Strengths() {
       {/* Top separator */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 xl:px-24">
+      <div className="max-w-[1850px] mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <motion.div

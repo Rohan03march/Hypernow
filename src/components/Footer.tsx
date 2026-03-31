@@ -11,7 +11,7 @@ export default function Footer() {
       {/* Subtle background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 xl:px-24">
+      <div className="max-w-[1850px] mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
 
@@ -69,7 +69,8 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-primary-400" />
                 </div>
                 <span className="font-medium text-sm leading-relaxed">
-                  Bangalore, Karnataka<br />India
+                  #49/3 MEC Road , Marappanapalya, Yeshwanthpur,
+                  Bengaluru - 560022
                 </span>
               </li>
               <li className="flex gap-4 text-slate-400 items-center group">
@@ -90,15 +91,10 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-center items-center gap-6">
           <p className="text-slate-500 text-xs font-bold tracking-widest uppercase">
             &copy; {currentYear} <span className="text-white">HyperNow Logistics</span>. Engineered for Speed.
           </p>
-          <div className="flex gap-8 text-[10px] text-slate-500 font-black uppercase tracking-[0.2em]">
-            <a href="#" className="hover:text-primary-400 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-primary-400 transition-colors">Terms</a>
-            <a href="#" className="hover:text-primary-400 transition-colors">Cookies</a>
-          </div>
         </div>
 
       </div>

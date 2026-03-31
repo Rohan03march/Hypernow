@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 const contactItems = [
   { icon: <Phone className="w-8 h-8" />, title: "Call Operations", info: "+91 9036377680", link: "tel:+919036377680" },
   { icon: <Mail className="w-8 h-8" />, title: "Strategic Email", info: "info@hypernow.co.in", link: "mailto:info@hypernow.co.in" },
-  { icon: <MapPin className="w-8 h-8" />, title: "HQ Location", info: "Bangalore & Chennai, India", link: "#" },
+  { icon: <MapPin className="w-8 h-8" />, title: "HQ Location", info: "Bangalore, India", link: "#" },
 ];
 
 export default function Contact() {
@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="absolute inset-0 bg-grid-white/[0.02]" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-600/10 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 relative z-10">
+      <div className="max-w-[1850px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <div className="flex flex-col items-center text-center">
           <motion.div
@@ -32,7 +32,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-7xl lg:text-8xl font-heading font-black text-white mb-10 tracking-tighter max-w-4xl"
+            className="text-5xl md:text-7xl lg:text-8xl font-heading font-black text-white mb-10 tracking-tighter max-w-6xl"
           >
             Connect with our <span className="gradient-text">Leadership</span>
           </motion.h2>
@@ -48,7 +48,7 @@ export default function Contact() {
             strategic teams for high-volume dark store requirements.
           </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-none">
             {contactItems.map((item, index) => (
               <motion.div
                 key={index}

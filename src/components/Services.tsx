@@ -50,7 +50,7 @@ export default function Services() {
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-grid opacity-10 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 relative z-10">
+      <div className="max-w-[1850px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <div className="text-center max-w-3xl mx-auto mb-20">
           <motion.div
