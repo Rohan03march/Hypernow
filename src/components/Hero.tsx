@@ -25,7 +25,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-background pt-32 lg:pt-48 pb-24">
+    <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-background pt-34 lg:pt-48 pb-24">
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-grid opacity-20 pointer-events-none" />
       <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary-500/10 rounded-full blur-[120px] pointer-events-none animate-pulse" />
@@ -98,7 +98,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9, x: 20 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
-            className="flex-1 relative w-full lg:w-auto mb-12 lg:mb-0"
+            className="flex-1 relative w-full lg:w-auto mb-6 lg:mb-0"
           >
             <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-[10px] border-white/5 shadow-2xl glass group">
               <img
