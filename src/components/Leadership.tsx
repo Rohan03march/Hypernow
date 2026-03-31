@@ -12,9 +12,29 @@ const LinkedInIcon = ({ className }: { className?: string }) => (
 
 const leaders = [
   {
-    name: "Harsheel S Patel",
+    name: "Chandan Lokesh",
     role: "Co-Founder",
     id: "01",
+    designation: "Strategic Manpower",
+    icon: (props: any) => (
+      <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+    ),
+    highlights: [
+      "Founder of 'SOURCE ONE,' managing a successful workforce of 500+ employees.",
+      "Strategic manpower provider for industry giants Blinkit, Zepto, and John Distilleries.",
+      "Expert in recruitment, workforce development, and attrition management.",
+      "Specialist in operational staffing and human resource scaling.",
+    ]
+  },
+  {
+    name: "Harsheel S Patel",
+    role: "Co-Founder",
+    id: "02",
     designation: "Strategic Vision",
     icon: (props: any) => (
       <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -33,7 +53,7 @@ const leaders = [
   {
     name: "Vignesh S",
     role: "Co-Founder",
-    id: "02",
+    id: "03",
     designation: "Growth Ops",
     icon: (props: any) => (
       <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -52,7 +72,7 @@ const leaders = [
   {
     name: "Syed Nawaz",
     role: "Co-Founder",
-    id: "03",
+    id: "04",
     designation: "Operational Rigor",
     icon: (props: any) => (
       <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -66,26 +86,7 @@ const leaders = [
       "Strong background in multi-store performance and logistics handling.",
     ]
   },
-  {
-    name: "Chandan Lokesh",
-    role: "Co-Founder",
-    id: "04",
-    designation: "Strategic Manpower",
-    icon: (props: any) => (
-      <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-        <circle cx="9" cy="7" r="4" />
-        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-      </svg>
-    ),
-    highlights: [
-      "Founder of 'SOURCE ONE,' managing a successful workforce of 500+ employees.",
-      "Strategic manpower provider for industry giants Blinkit, Zepto, and John Distilleries.",
-      "Expert in recruitment, workforce development, and attrition management.",
-      "Specialist in operational staffing and human resource scaling.",
-    ]
-  },
+
 ];
 
 function LeaderRow({ leader, index }: { leader: typeof leaders[0], index: number }) {
