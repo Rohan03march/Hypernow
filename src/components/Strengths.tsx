@@ -8,9 +8,9 @@ export default function Strengths() {
     <section id="strengths" className="py-24 md:py-32 bg-background relative overflow-hidden">
       {/* Top separator */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent" />
-      
+
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 xl:px-24">
-        
+
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -58,7 +58,7 @@ export default function Strengths() {
               transition={{ delay: 0.2 }}
               className="glass p-8 rounded-3xl border border-white/5 hover:border-blue-400/30 transition-all group"
             >
-              <div className="text-4xl md:text-5xl font-heading font-black text-blue-400 mb-2 group-hover:scale-110 transition-transform origin-left">15+</div>
+              <div className="text-4xl md:text-5xl font-heading font-black text-blue-400 mb-2 group-hover:scale-110 transition-transform origin-left">3</div>
               <div className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-1">Cities</div>
               <div className="text-sm text-slate-300 font-medium">Managed Presence</div>
             </motion.div>

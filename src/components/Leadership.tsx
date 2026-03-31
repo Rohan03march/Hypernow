@@ -12,10 +12,48 @@ const LinkedInIcon = ({ className }: { className?: string }) => (
 
 const leaders = [
   {
-    name: "Chandan Lokesh",
+    name: "Vignesh S",
     role: "Co-Founder",
     id: "01",
-    designation: "Strategic Manpower",
+    designation: "Growth Ops, Chennai",
+    icon: (props: any) => (
+      <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73z" />
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+        <line x1="12" y1="22.08" x2="12" y2="12" />
+      </svg>
+    ),
+    highlights: [
+      "10+ years of expertise in manufacturing, supply chain, and e-commerce logistics.",
+      "Previous leadership roles at Amazon, Godrej, and Hindustan Foods Ltd.",
+      "Specialist in warehouse operations, last-mile delivery, and inventory control.",
+      "Proven expert in process improvement and large-scale team management.",
+    ]
+  },
+  {
+    name: "Harsheel S Patel",
+    role: "Co-Founder",
+    id: "02",
+    designation: "Strategic Vision, Gujarat",
+    icon: (props: any) => (
+      <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+        <line x1="3" y1="9" x2="21" y2="9" />
+        <line x1="9" y1="21" x2="9" y2="9" />
+      </svg>
+    ),
+    highlights: [
+      "Architect and business innovation strategist with a long-term investment vision.",
+      "Active investment partner in multiple ventures across diverse high-growth sectors.",
+      "Specialist in rapid commerce infrastructure and dark store facility optimization.",
+      "Deeply explores emerging business models for platforms like Blinkit and Zepto.",
+    ]
+  },
+  {
+    name: "Chandan Lokesh",
+    role: "Co-Founder",
+    id: "03",
+    designation: "Strategic Manpower, Bengaluru",
     icon: (props: any) => (
       <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -32,48 +70,10 @@ const leaders = [
     ]
   },
   {
-    name: "Harsheel S Patel",
-    role: "Co-Founder",
-    id: "02",
-    designation: "Strategic Vision",
-    icon: (props: any) => (
-      <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-        <line x1="3" y1="9" x2="21" y2="9" />
-        <line x1="9" y1="21" x2="9" y2="9" />
-      </svg>
-    ),
-    highlights: [
-      "Architect and business innovation strategist with a long-term investment vision.",
-      "Active investment partner in multiple ventures across diverse high-growth sectors.",
-      "Specialist in rapid commerce infrastructure and dark store facility optimization.",
-      "Deeply explores emerging business models for platforms like Blinkit and Zepto.",
-    ]
-  },
-  {
-    name: "Vignesh S",
-    role: "Co-Founder",
-    id: "03",
-    designation: "Growth Ops",
-    icon: (props: any) => (
-      <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73z" />
-        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-        <line x1="12" y1="22.08" x2="12" y2="12" />
-      </svg>
-    ),
-    highlights: [
-      "10+ years of expertise in manufacturing, supply chain, and e-commerce logistics.",
-      "Previous leadership roles at Amazon, Godrej, and Hindustan Foods Ltd.",
-      "Specialist in warehouse operations, last-mile delivery, and inventory control.",
-      "Proven expert in process improvement and large-scale team management.",
-    ]
-  },
-  {
     name: "Syed Nawaz",
     role: "Co-Founder",
     id: "04",
-    designation: "Operational Rigor",
+    designation: "Operational Rigor, Bengaluru",
     icon: (props: any) => (
       <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />

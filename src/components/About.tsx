@@ -93,19 +93,6 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-primary-500/10" />
             </div>
-
-            {/* Floating stats card */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="absolute -bottom-10 -left-10 glass p-8 rounded-[2rem] shadow-2xl border border-white/10 max-w-[260px] hidden md:block"
-            >
-              <div className="text-5xl font-heading font-black text-white mb-2 tracking-tight">10y+</div>
-              <div className="text-xs font-bold text-accent-400 uppercase tracking-widest mb-3">Leadership Depth</div>
-              <div className="text-sm text-slate-300 font-light leading-relaxed">Combined experience in fulfillment, dark stores, and hyper-local logistics.</div>
-            </motion.div>
           </motion.div>
 
         </div>

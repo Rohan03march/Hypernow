@@ -54,7 +54,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-400 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
-              We are India's preferred operations partner for <span className="text-white font-medium italic">quick-commerce</span>. Building the backbone of 10-minute delivery infrastructure.
+              We are building the <span className="text-white font-medium italic">operational backbone</span> for India’s quick-commerce and e-commerce brands, helping them set up, manage, and scale their operations and logistics.
             </motion.p>
 
             <motion.div
@@ -82,10 +82,6 @@ export default function Hero() {
               variants={itemVariants}
               className="mt-12 flex flex-wrap gap-8 items-center justify-center lg:justify-start border-t border-white/5 pt-8"
             >
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-accent-400" />
-                <span className="text-sm font-semibold text-slate-300">99.9% Fulfillment Rate</span>
-              </div>
             </motion.div>
           </motion.div>
 
