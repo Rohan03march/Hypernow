@@ -3,13 +3,22 @@
 import { motion } from "framer-motion";
 import { Activity, Calendar, AlertCircle } from "lucide-react";
 
-const location = {
-  city: "Chennai & Bengaluru",
-  client: "Zepto",
-  status: "Discussion in Progress",
-  details: "Finalizing operational terms for high-velocity dark store infrastructure at two strategic urban clusters in Bengaluru & Chennai.",
-  highlight: "2 Dark Stores Planned"
-};
+const locations = [
+  {
+    city: "Chennai",
+    client: "Zepto",
+    status: "Discussion in Progress",
+    details: "Finalizing operational terms for high-velocity dark store infrastructure at two strategic urban clusters in Chennai.",
+    highlight: "2 Dark Stores Planned"
+  },
+  {
+    city: "Bangalore",
+    client: "Zepto",
+    status: "Discussion in Progress",
+    details: "Strategic partnership for a high-capacity fulfillment center to support Bangalore's rapid quick-commerce growth.",
+    highlight: "1 Dark Store Planned"
+  }
+];
 
 export default function UpcomingProjects() {
   return (
@@ -63,42 +72,45 @@ export default function UpcomingProjects() {
           </motion.div>
         </div>
 
-        <div className="flex justify-center">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="group relative overflow-hidden w-full max-w-4xl"
-          >
-            <div className="glass p-6 md:p-12 rounded-[2rem] md:rounded-[3rem] border border-white/5 group-hover:border-primary-500/30 transition-all duration-700 h-full flex flex-col justify-between shimmer-effect">
-              <div>
-                <div className="flex flex-row justify-between items-start gap-4 mb-8 md:mb-10">
-                  <div className="w-32 md:w-40 h-12 md:h-16 flex items-center justify-start group-hover:scale-110 transition-all duration-500 overflow-hidden">
-                    <img src="/images/Zepto.png" alt="Zepto" className="w-full h-full object-contain object-left pointer-events-none" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {locations.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              className="group relative overflow-hidden"
+            >
+              <div className="glass p-6 md:p-12 rounded-[2rem] md:rounded-[3rem] border border-white/5 group-hover:border-primary-500/30 transition-all duration-700 h-full flex flex-col justify-between shimmer-effect">
+                <div>
+                  <div className="flex flex-row justify-between items-start gap-4 mb-8 md:mb-10">
+                    <div className="w-32 md:w-40 h-12 md:h-16 flex items-center justify-start group-hover:scale-110 transition-all duration-500 overflow-hidden">
+                      <img src="/images/Zepto.png" alt="Zepto" className="w-full h-full object-contain object-left pointer-events-none" />
+                    </div>
+                    <div className="px-2 py-1 md:px-4 md:py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-300 text-[9px] md:text-xs font-bold uppercase tracking-wider whitespace-nowrap">
+                      {item.status}
+                    </div>
                   </div>
-                  <div className="px-2 py-1 md:px-4 md:py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-300 text-[9px] md:text-xs font-bold uppercase tracking-wider whitespace-nowrap">
-                    {location.status}
-                  </div>
+
+                  <h3 className="text-2xl md:text-4xl font-black text-white mb-4 md:mb-6 group-hover:text-primary-300 transition-colors tracking-tight leading-tight">
+                    {item.city} <span className="block sm:inline text-base md:text-xl font-light text-slate-500 sm:ml-2">For {item.client}</span>
+                  </h3>
+
+                  <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-8 md:mb-10">
+                    {item.details}
+                  </p>
                 </div>
 
-                <h3 className="text-2xl md:text-5xl font-black text-white mb-4 md:mb-6 group-hover:text-primary-300 transition-colors tracking-tight leading-tight">
-                  {location.city} <span className="block sm:inline text-base md:text-xl font-light text-slate-500 sm:ml-2">For {location.client}</span>
-                </h3>
-
-                <p className="text-slate-400 text-base md:text-xl leading-relaxed mb-8 md:mb-10">
-                  {location.details}
-                </p>
-              </div>
-
-              <div className="pt-6 md:pt-8 border-t border-white/5 flex items-center justify-between">
-                <div className="flex items-center gap-2 md:gap-3 text-white font-bold text-sm md:text-lg">
-                  <Calendar className="w-5 h-5 md:w-6 md:h-6 text-primary-400" />
-                  {location.highlight}
+                <div className="pt-6 md:pt-8 border-t border-white/5 flex items-center justify-between">
+                  <div className="flex items-center gap-2 md:gap-3 text-white font-bold text-sm md:text-lg">
+                    <Calendar className="w-5 h-5 md:w-6 md:h-6 text-primary-400" />
+                    {item.highlight}
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
