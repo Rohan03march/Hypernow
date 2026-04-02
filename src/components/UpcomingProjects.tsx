@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Activity, Calendar, AlertCircle } from "lucide-react";
 
 const location = {
-  city: "Chennai Locations",
+  city: "Chennai & Bengaluru",
   client: "Zepto",
   status: "Discussion in Progress",
   details: "Finalizing operational terms for high-velocity dark store infrastructure at two strategic urban clusters in Chennai.",
