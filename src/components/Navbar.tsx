@@ -10,6 +10,7 @@ const links = [
   { name: "Mission & Vision", href: "#mission-vision" },
   { name: "Services", href: "#services" },
   { name: "Strengths", href: "#strengths" },
+  { name: "Expansion", href: "#expansion" },
   { name: "Founders", href: "#leadership" },
   { name: "Contact", href: "#contact" },
 ];
