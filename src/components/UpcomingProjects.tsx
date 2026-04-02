@@ -7,7 +7,7 @@ const location = {
   city: "Chennai & Bengaluru",
   client: "Zepto",
   status: "Discussion in Progress",
-  details: "Finalizing operational terms for high-velocity dark store infrastructure at two strategic urban clusters in Chennai.",
+  details: "Finalizing operational terms for high-velocity dark store infrastructure at two strategic urban clusters in Bengaluru & Chennai.",
   highlight: "2 Dark Stores Planned"
 };
 
