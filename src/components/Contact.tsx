@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 const contactItems = [
   { icon: <Phone className="w-8 h-8" />, title: "Call Operations", info: "+91 9036377680", link: "tel:+919036377680" },
   { icon: <Mail className="w-8 h-8" />, title: "Strategic Email", info: "info@hypernow.co.in", link: "mailto:info@hypernow.co.in" },
-  { icon: <MapPin className="w-8 h-8" />, title: "HQ Location", info: "Bangalore, India", link: "#" },
+  { icon: <MapPin className="w-8 h-8" />, title: "HQ Location", info: "Bengaluru & Chennai, India", link: "#" },
 ];
 
 export default function Contact() {
