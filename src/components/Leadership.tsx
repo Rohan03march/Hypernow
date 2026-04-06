@@ -49,43 +49,43 @@ const leaders = [
       "Deeply explores emerging business models for platforms like Blinkit and Zepto.",
     ]
   },
-  {
-    name: "Chandan Lokesh",
-    role: "Co-Founder",
-    id: "03",
-    designation: "Strategic Manpower, Bengaluru",
-    icon: (props: any) => (
-      <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-        <circle cx="9" cy="7" r="4" />
-        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-      </svg>
-    ),
-    highlights: [
-      "Founder of 'SOURCE ONE,' managing a successful workforce of 500+ employees.",
-      "Strategic manpower provider for industry giants Blinkit, Zepto, and John Distilleries.",
-      "Expert in recruitment, workforce development, and attrition management.",
-      "Specialist in operational staffing and human resource scaling.",
-    ]
-  },
-  {
-    name: "Syed Nawaz",
-    role: "Co-Founder",
-    id: "04",
-    designation: "Operational Rigor, Bengaluru",
-    icon: (props: any) => (
-      <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-      </svg>
-    ),
-    highlights: [
-      "MBA with 5+ years of dedicated expertise in the quick-commerce landscape.",
-      "Former Darkstore Manager at Zepto and Blinkit, handling intensive operations.",
-      "Managed high-volume stores processing massive 3000-4000 orders per day.",
-      "Strong background in multi-store performance and logistics handling.",
-    ]
-  },
+  // {
+  //   name: "Chandan Lokesh",
+  //   role: "Co-Founder",
+  //   id: "03",
+  //   designation: "Strategic Manpower, Bengaluru",
+  //   icon: (props: any) => (
+  //     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  //       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+  //       <circle cx="9" cy="7" r="4" />
+  //       <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+  //       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  //     </svg>
+  //   ),
+  //   highlights: [
+  //     "Founder of 'SOURCE ONE,' managing a successful workforce of 500+ employees.",
+  //     "Strategic manpower provider for industry giants Blinkit, Zepto, and John Distilleries.",
+  //     "Expert in recruitment, workforce development, and attrition management.",
+  //     "Specialist in operational staffing and human resource scaling.",
+  //   ]
+  // },
+  // {
+  //   name: "Syed Nawaz",
+  //   role: "Co-Founder",
+  //   id: "04",
+  //   designation: "Operational Rigor, Bengaluru",
+  //   icon: (props: any) => (
+  //     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  //       <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+  //     </svg>
+  //   ),
+  //   highlights: [
+  //     "MBA with 5+ years of dedicated expertise in the quick-commerce landscape.",
+  //     "Former Darkstore Manager at Zepto and Blinkit, handling intensive operations.",
+  //     "Managed high-volume stores processing massive 3000-4000 orders per day.",
+  //     "Strong background in multi-store performance and logistics handling.",
+  //   ]
+  // },
 
 ];
 
