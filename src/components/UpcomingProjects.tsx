@@ -12,7 +12,7 @@ const locations = [
     highlight: "2 Dark Stores Planned"
   },
   {
-    city: "Bangalore",
+    city: "Bengaluru",
     client: "Zepto",
     status: "Discussion in Progress",
     details: "Strategic partnership for a high-capacity fulfillment center to support Bangalore's rapid quick-commerce growth.",
