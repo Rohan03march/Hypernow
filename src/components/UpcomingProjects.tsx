@@ -1,22 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Activity, Calendar, AlertCircle } from "lucide-react";
+import { Activity, Calendar } from "lucide-react";
 
 const locations = [
   {
     city: "Chennai",
-    client: "Zepto",
-    status: "Discussion in Progress",
-    details: "Finalizing operational terms for high-velocity dark store infrastructure at two strategic urban clusters in Chennai.",
-    highlight: "2 Dark Stores Planned"
+    client: "Amazon Store",
+    logo: "/images/amazon.svg",
+    status: "Partnered",
+    details: "Powering high-velocity dark store and micro-fulfillment operations for the Amazon Store network across strategic urban clusters in Chennai.",
+    highlight: "Operational Launch"
   },
   {
     city: "Bengaluru",
-    client: "Zepto",
-    status: "Discussion in Progress",
-    details: "Strategic partnership for a high-capacity fulfillment center to support Bangalore's rapid quick-commerce growth.",
-    highlight: "1 Dark Store Planned"
+    client: "Amazon Store",
+    logo: "/images/amazon.svg",
+    status: "Partnered",
+    details: "Strategic execution partner managing high-capacity Amazon Store fulfillment infrastructure to handle Bengaluru's quick-commerce demand.",
+    highlight: "Active Deployment"
   }
 ];
 
@@ -53,23 +55,6 @@ export default function UpcomingProjects() {
               We are actively scaling our operations to new horizons, partnering with industry leaders to redefine quick-commerce logistics.
             </p>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="glass-premium p-5 md:p-6 rounded-2xl md:rounded-3xl border-l-4 border-yellow-500/50 flex items-start gap-4 max-w-md"
-          >
-            <div className="bg-yellow-500/20 p-2 rounded-lg md:rounded-xl text-yellow-500 shrink-0">
-              <AlertCircle className="w-5 h-5 md:w-6 md:h-6" />
-            </div>
-            <div>
-              <h4 className="text-white font-bold mb-1 text-sm md:text-base">Paused for Elections</h4>
-              <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
-                Strategic rollouts are currently on hold due to state elections. Discussions will conclude immediately following the polls.
-              </p>
-            </div>
-          </motion.div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -86,7 +71,7 @@ export default function UpcomingProjects() {
                 <div>
                   <div className="flex flex-row justify-between items-start gap-4 mb-8 md:mb-10">
                     <div className="w-32 md:w-40 h-12 md:h-16 flex items-center justify-start group-hover:scale-110 transition-all duration-500 overflow-hidden">
-                      <img src="/images/Zepto.png" alt="Zepto" className="w-full h-full object-contain object-left pointer-events-none" />
+                      <img src={item.logo} alt={item.client} className="w-full h-full object-contain object-left pointer-events-none" />
                     </div>
                     <div className="px-2 py-1 md:px-4 md:py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-300 text-[9px] md:text-xs font-bold uppercase tracking-wider whitespace-nowrap">
                       {item.status}
