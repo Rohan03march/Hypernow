@@ -5,7 +5,6 @@ import MissionVision from "@/components/MissionVision";
 import Services from "@/components/Services";
 import Strengths from "@/components/Strengths";
 import UpcomingProjects from "@/components/UpcomingProjects";
-import Leadership from "@/components/Leadership";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -21,7 +20,6 @@ export default function Home() {
           <Services />
           <Strengths />
           <UpcomingProjects />
-          <Leadership />
           <Contact />
         </div>
       </main>
